@@ -5,11 +5,12 @@ This allows you to use the Zend GData Library in a Codeigniter project with a ti
 Installation
 ------------
 - Copy the contents of the repo to your Codeigniter folder.
-- Uncomment the line that matches your OS in /application/helpers/zend_helper.php
+- Uncomment the line that matches your server's OS in /application/helpers/zend_helper.php
 
 ```php
-// $path_to_zend = str_replace('/', '\\', APPPATH) . 'zend\\'; //windows
-// $path_to_zend = APPPATH . '/zend/'; //linux
+$path_to_zend = str_replace('/', '\\', APPPATH) . 'zend\\'; //windows
+// or
+$path_to_zend = APPPATH . '/zend/'; //linux
 ```
 
 Notes
