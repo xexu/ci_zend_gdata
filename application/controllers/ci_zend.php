@@ -1,6 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class ci_zend extends CI_Controller {
+	
+	function __construct()
+	{
+		parent::__construct();
+		
+		// Load Zend helper
+		$this->load->helper('zend');
+	}
+	
 	public function insert()
 	{
 		Zend_Loader::loadClass('Zend_Gdata');
